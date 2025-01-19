@@ -29,7 +29,6 @@ const ExploreScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* Input Section */}
       <View style={styles.inputContainer}>
         <TextInput
           onChangeText={text => setValue(text)}
@@ -48,7 +47,6 @@ const ExploreScreen = () => {
         </TouchableOpacity>
       </View>
 
-      {/* Scrollable List */}
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         {search.map((item, index) => (
           <View key={index} style={styles.outputContainer}>
@@ -101,7 +99,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   scrollContainer: {
-    flexGrow: 1, // ScrollView კონტენტის გაფართოება
+    flexGrow: 1,
     justifyContent: 'flex-start',
   },
   outputContainer: {
