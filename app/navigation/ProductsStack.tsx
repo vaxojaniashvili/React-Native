@@ -16,7 +16,13 @@ const ProductsStack = () => {
       <Stack.Screen
         name="ProductDetails"
         component={DetailProducts}
-        options={{title: 'Product Details'}}
+        options={{
+          title: 'Product Details',
+          headerStyle: {
+            backgroundColor: '#0D192C',
+          },
+          headerTintColor: 'white',
+        }}
       />
     </Stack.Navigator>
   );
